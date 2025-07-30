@@ -32,8 +32,8 @@ Only one valid answer exists.
 Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity? """
 
 
-        nums = [2, 7, 11, 15]
-        target = 9
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
         vistos = {} # Inicio el diccionaro: número ➝ índice
         for i, num in enumerate (nums):
             complemento = target - num # ¿Qué número necesito?
